@@ -11,27 +11,27 @@
 
 ## Slack API class설명
 
-### 1. [SlackBot.java]()
+### 1. [SlackBot.java](https://github.com/joswlv/slackLink2OtherApi/blob/master/src/main/java/com/joswlv/slackbot/slack/SlackBot.java)
 
 - 대화형 Bot
 - [https://api.slack.com/bot-users](https://api.slack.com/bot-users)
 
-### 2. [SlackSlashCommand.java]()
+### 2. [SlackSlashCommand.java](https://github.com/joswlv/slackLink2OtherApi/blob/master/src/main/java/com/joswlv/slackbot/slack/SlackSlashCommand.java)
 
 - slack slash command에서 넘어온 param을 이용해 서비스를 제공할 수 있다.
 - [https://api.slack.com/slash-commands](https://api.slack.com/slash-commands)
 
-### 3. [SlackWebhooks.java]()
+### 3. [SlackWebhooks.java](https://github.com/joswlv/slackLink2OtherApi/blob/master/src/main/java/com/joswlv/slackbot/slack/SlackWebhooks.java)
 
 - 지정한 workspace에 hook을 보낼 수 있다.
 -  [https://api.slack.com/incoming-webhooks](https://api.slack.com/incoming-webhooks)
 
 ## Google API연동
 
-### GoogleOauth연동 - [GoogleOauth.java]()
+### GoogleOauth연동 - [GoogleOauth.java](https://github.com/joswlv/slackLink2OtherApi/blob/master/src/main/java/com/joswlv/slackbot/google/GoogleOauth.java)
 
 1. [https://console.developers.google.com](https://console.developers.google.com)에 접속을하여 프로젝트를 생성한다.
 2. 연동하고 싶은 API를 설성하고 `서비스 계정키`를 생성한다.([참고](https://handcoding.tistory.com/20))
 3. `사용자 인증정보 만들기`에서 `Oauth 클라이언트 ID`를 클릭한다.
-4. `애플리케이션 유형`을 기타로 하여 발급을 받고 josn파일을 다운받아 프로젝트 `resource`에 `calendar_secret.json`로 추가한다.(이름 변경을 하면 [여기]()를 수정한다.)
-5. [Googleoauth.java]() api별 권한 scope를 설정한다. ([참고](https://developers.google.com/identity/protocols/googlescopes))
+4. `애플리케이션 유형`을 기타로 하여 발급을 받고 josn파일을 다운받아 프로젝트 `resource`에 `calendar_secret.json`로 추가한다.(이름 변경을 하면 [여기](https://github.com/joswlv/slackLink2OtherApi/blob/master/src/main/java/com/joswlv/slackbot/google/GoogleOauth.java#L33)를 수정한다.)
+5. [Googleoauth.java](https://github.com/joswlv/slackLink2OtherApi/blob/master/src/main/java/com/joswlv/slackbot/google/GoogleOauth.java#L32) api별 권한 scope를 설정한다. ([참고](https://developers.google.com/identity/protocols/googlescopes))
